@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+    <ul></ul>
+    <script>
+      var nomes = ["Diego", "Gabriel", "Lucas"];
+      var listElement = document.querySelector("ul");
+      for (nome of nomes) {
+        var liElement = document.createElement("li");
+        var textElement = document.createTextNode(nome);
+        liElement.appendChild(textElement);
+        listElement.appendChild(liElement);
+      }
+      // var nomes = ["Diego", "Gabriel", "Lucas"];
+      // var listaNome = document.querySelector("ul");
+      // for (nome of nomes) {
+      //   var nomeInsert = document.createElement("li");
+      //   var nome = document.createTextNode(nome);
+      //   nomeInsert.appendChild(nome);
+      //   listaNome.appendChild(nomeInsert);
+      // }
+    </script>
+  </body>
+</html>
